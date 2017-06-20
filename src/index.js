@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+// TODO: Un-comment out line 5 and 9 in production build to enable serviceWorker
+// import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
