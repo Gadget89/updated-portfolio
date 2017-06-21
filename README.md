@@ -1,4 +1,4 @@
-#Objective
+# Objective
 ---
 
 Create a responsive app that showcases web development skills that is scalable.
@@ -9,11 +9,11 @@ Create a responsive app that showcases web development skills that is scalable.
 
 The driving force behind app. The visitor should be compelled to dive into app and get a glimpse of developers right hemisphere.
 
-##Efficientcy
+## Efficientcy
 
 The secondary force at play in app. The visitor will see how well the developers left hemisphere creates an idea into reality.
 
-#Milestone 1
+# Milestone 1
 ---
 Visitor will be able to:
 1. View app correctly on multiple device screen sizes.
@@ -27,5 +27,5 @@ Visitor will be able to:
 9. View portfolio of projects.
 10. Android device color schemes active.
 
-#Milestone 2
+# Milestone 2
 1. Custom in-app blog platform.
