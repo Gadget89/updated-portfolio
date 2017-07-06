@@ -1,0 +1,26 @@
+/*Main CSS*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+li {
+  list-style: none;
+}
+/*Navigation Styles*/
+.nav-container {
+  border-bottom: solid 1px grey;
+}
+.nav-list-container {
+  display: inline-flex;
+  float: right;
+  margin-right: 10px;
+  padding: 0;
+}
+.nav-list-container li {
+  margin-left: 5px;
+}
+.nav-logo {
+  margin: 10px;
+  width: 50px;
+}
