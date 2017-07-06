@@ -1,5 +1,12 @@
 /*Main CSS*/
+/*
+Color Pallet
+Blue: 3F51B5
+Light-grey:
+Yellow: FFC107
+*/
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -8,17 +15,39 @@ li {
   list-style: none;
 }
 /*Navigation Styles*/
+.nav-background {
+  background-color:lightgrey;
+  width: 100%;
+  height: 70px;
+  opacity: 0.3;
+  position: absolute;
+  z-index: -1;
+}
 .nav-container {
-  border-bottom: solid 1px grey;
+  position: relative;
+  width: 100%;
+  z-index: 10;
 }
 .nav-list-container {
   display: inline-flex;
   float: right;
-  margin-right: 10px;
+  margin: 28px 10px;
   padding: 0;
+  text-align: center;
+  text-transform: capitalize;
 }
 .nav-list-container li {
-  margin-left: 5px;
+  color: #3F51B5;
+  font-weight: 400;
+  margin-left: 10px;
+
+}
+.nav-list-container li:hover {
+  bod
+  cursor: pointer;
+  font-weight: bold;
+  height: 15px;
+  border-bottom: solid 2px #FFC107;
 }
 .nav-logo {
   margin: 10px;
