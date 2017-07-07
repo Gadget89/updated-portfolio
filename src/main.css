@@ -20,11 +20,13 @@ li {
   background-color: #FFF;
   width: 100%;
   height: 70px;
-  opacity: 0.5;
+  opacity: 0.95;
   position: fixed;
+  top: 0;
   z-index: -1;
 }
 .nav-container {
+  height: 0;
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -36,7 +38,7 @@ li {
   position: relative;
   text-align: center;
   text-transform: uppercase;
-  top: -80px;
+  top: 0px;
   width: 306px;
 }
 .nav-list-container li {
@@ -52,6 +54,9 @@ li {
   border-bottom: solid 2px #FFC107;
 }
 .nav-logo {
+  left: 0;
   margin: 10px;
   width: 50px;
+  position: absolute;
+  top: 0;
 }
