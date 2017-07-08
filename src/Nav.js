@@ -17,6 +17,7 @@ class Nav extends Component {
         </ul>
         <img alt='' className='nav-logo' src={Logo}></img>
         <div className='nav-background'></div>
+        <i className="fa fa-github" aria-hidden="true"></i>
       </nav>
     );
   }
