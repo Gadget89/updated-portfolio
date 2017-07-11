@@ -7,16 +7,19 @@ import Logo from './assets/new-logo.png';
 class Nav extends Component {
   render() {
     return (
-      <nav className='nav-container'>
-        <ul className='nav-list-container'>
-          <li>My Story</li>
-          <li>Projects</li>
-          <li>Contact Me</li>
-        </ul>
-        <img alt='' className='nav-logo' src={Logo}></img>
-        <div className='nav-background'></div>
-        <i className="fa fa-github" aria-hidden="true"></i>
-      </nav>
+      <header>
+        <nav className='nav-container'>
+          <ul className='nav-list-container'>
+            <li>My Story</li>
+            <li>Projects</li>
+            <li>Contact Me</li>
+          </ul>
+          <a href="">
+            <img alt='Go back to home page' className='nav-logo' src={Logo}></img>
+          </a>
+          <div className='nav-background'></div>
+        </nav>
+      </header>
     );
   }
 }
