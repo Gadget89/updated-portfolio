@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 
 import './main.css';
-import Logo from './assets/Zia-Logo.png';
+import Logo from './assets/new-logo.png';
 
 
 class Nav extends Component {
   render() {
     return (
       <nav className='nav-container'>
-
-
         <ul className='nav-list-container'>
           <li>My Story</li>
           <li>Projects</li>
