@@ -15,6 +15,9 @@ class Landing extends Component {
           <h3>Welcome to my portfolio.</h3>
           <h4>Start Exploring!</h4>
         </aside>
+        <canvas>
+          
+        </canvas>
       </main>
     );
   }
