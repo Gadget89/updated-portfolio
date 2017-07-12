@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 import './main.css';
-import Basketball from './assets/hero-photo.jpeg'
+import Basketball from './assets/new-hero-photo.jpeg'
 
 class Landing extends Component {
   render() {
     return (
       <div>
-        <img alt='' src={Basketball}></img>
+        <img alt='' className="landing-hero-img" src={Basketball}></img>
       </div>
     );
   }

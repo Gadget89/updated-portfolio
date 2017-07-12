@@ -11,6 +11,8 @@ body {
   padding: 0;
   font-family: sans-serif;
   min-height: 1500px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 li {
   list-style: none;
@@ -39,12 +41,12 @@ li {
   text-align: center;
   text-transform: uppercase;
   top: 0px;
-  width: 306px;
+  width: 365px;
 }
 .nav-list-container li {
-  color: #3F51B5;
+  /*color: #3F51B5;*/
   font-weight: 400;
-  margin-left: 10px;
+  margin-left: 30px;
 
 }
 .nav-list-container li:hover {
@@ -52,11 +54,34 @@ li {
   font-weight: bold;
   height: 15px;
   border-bottom: solid 2px #FFC107;
+  padding-bottom: 10px;
 }
 .nav-logo {
   left: 0;
-  margin: 10px;
+  margin: 10px 5%;
   width: 50px;
   position: absolute;
   top: 0;
+}
+/*Mobile Nav*/
+.mobile-nav-menu-icon {
+  display: none;
+}
+/*Landing Styles*/
+.landing-hero-img {
+
+}
+
+@media only screen and (max-width: 600px) {
+  /*For mobile*/
+  .nav-list-container,
+  .nav-list-container li {
+    display: none;
+  }
+  .mobile-nav-menu-icon {
+    display: inline;
+    float: right;
+    margin: 18px 5%;
+    position: relative;
+  }
 }

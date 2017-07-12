@@ -8,8 +8,8 @@ class Nav extends Component {
   render() {
     return (
       <header>
-        <nav className='nav-container'>
-          <ul className='nav-list-container'>
+        <nav className="nav-container">
+          <ul className="nav-list-container" id="mobile-disp-hide">
             <li>My Story</li>
             <li>Projects</li>
             <li>Contact Me</li>
@@ -17,6 +17,11 @@ class Nav extends Component {
           <a href="">
             <img alt='Go back to home page' className='nav-logo' src={Logo}></img>
           </a>
+          <span className="mobile-nav-menu-icon">
+            <a>
+              <i className="fa fa-bars fa-2x" aria-hidden="true"></i>
+            </a>
+          </span>
           <div className='nav-background'></div>
         </nav>
       </header>
