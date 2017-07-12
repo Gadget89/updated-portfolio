@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 
 import './main.css';
-import Basketball from './assets/new-hero-photo.jpeg'
+import Hero from './assets/new-hero-photo.jpeg'
 
 class Landing extends Component {
   render() {
     return (
       <main>
         <section>
-          <img alt='' className="landing-hero-img" src={Basketball}></img>
+          <img alt='' className="landing-hero-img" src={Hero}></img>
         </section>
-        <aside className="lading-message">
+        <aside className="landing-message">
           <h2>Hello!</h2>
-          <h3>Welcom to my portfolio.</h3>
+          <h3>Welcome to my portfolio.</h3>
           <h4>Start Exploring!</h4>
         </aside>
       </main>
