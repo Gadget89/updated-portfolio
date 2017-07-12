@@ -71,6 +71,15 @@ li {
 .landing-hero-img {
 
 }
+.landing-message {
+  position: absolute;
+  z-index: 100;
+  float: left;
+  color: white;
+  top: 25%;
+  text-align: center;
+  width: 100%;
+}
 
 @media only screen and (max-width: 600px) {
   /*For mobile*/
