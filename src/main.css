@@ -82,6 +82,7 @@ li {
 }
 .landing-message h2, h3, h4 {
   font-size: 3em;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 600px) {
