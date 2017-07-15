@@ -88,12 +88,14 @@ li {
   right: 25%;
   position: absolute;
   text-align: center;
-  top: 25%;
+  top: 33%;
   z-index: 9;
 }
-.landing-message h2, h3, h4, p {
-  font-size: 3em;
+.landing-message p {
+  font-size: 5em;
+  font-weight: 600;
   text-transform: uppercase;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 
