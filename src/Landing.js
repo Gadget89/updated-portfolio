@@ -1,9 +1,37 @@
 import React, { Component } from 'react';
-
 import './main.css';
 import Hero from './assets/new-hero-photo.jpeg'
 
 class Landing extends Component {
+  componentDidMount() {
+      this.updateMessage();
+  }
+  updateMessage(){
+    function changeText(element, texts, time) {
+
+      var text = texts.splice(0, 1)[0];
+      if (text) {
+        element.innerHTML = text;
+        setTimeout(function () {
+          changeText(element, texts, time);
+        }, time);
+      }
+
+    }
+
+    var element = document.getElementById("change");
+    var texts = [
+      'Hello!',
+      'My name is Nicolas.',
+      'Welcome to my portfolio.',
+      'Start exploring!'
+    ];
+    var time = 4000;
+
+    changeText(element, texts, time);
+
+  }
+
   render() {
     return (
       <main>
@@ -11,9 +39,7 @@ class Landing extends Component {
           <img alt='' className="landing-hero-img" src={Hero}></img>
         </section>
         <aside className="landing-message">
-          <h2>Hello!</h2>
-          <h3>Welcome to my portfolio.</h3>
-          <h4>Start Exploring!</h4>
+          <p id="change"></p>
         </aside>
       </main>
     );
