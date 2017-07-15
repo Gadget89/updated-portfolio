@@ -84,6 +84,16 @@ li {
   font-size: 3em;
   text-transform: uppercase;
 }
+/*#hexmap {
+  width: 100%;
+  min-height: 800px;
+}*/
+#canvasoverlay {
+  position: relative;
+    top: -833px;
+    left: 0;
+    float: left;
+}
 
 @media only screen and (max-width: 600px) {
   /*For mobile*/
