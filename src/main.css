@@ -42,12 +42,17 @@ li {
 .nav-list-container {
   display: flex;
   margin: 28px auto;
+  /*left: 25%;*/
   padding: 0;
   position: relative;
-  text-align: center;
+  /*right: 25%;*/
+  /*text-align: center;*/
   text-transform: uppercase;
   top: 0px;
-  width: 365px;
+  /*width: 45%;*/
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   z-index: 11;
 }
 .nav-list-container li {
@@ -83,25 +88,27 @@ li {
 .landing-message {
   color: white;
   display: block;
+  font-size: 5em;
+  font-weight: 600;
   left: 25%;
   min-width: 50%;
   right: 25%;
   position: absolute;
   text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
   top: 33%;
   z-index: 9;
 }
-.landing-message p {
-  font-size: 5em;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-}
 
 
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1020px) {
   /*For mobile*/
+  .landing-message {
+    font-size: 3em;
+    left: 0;
+    min-width: 100%;
+  }
   .nav-list-container,
   .nav-list-container li {
     display: none;

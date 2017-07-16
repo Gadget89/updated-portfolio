@@ -13,6 +13,7 @@ class Nav extends Component {
             <li>My Story</li>
             <li>Projects</li>
             <li>Contact Me</li>
+            <li>Blog</li>
           </ul>
           <a href="">
             <img alt='Go back to home page' className='nav-logo' src={Logo}></img>
