@@ -50,7 +50,7 @@ class Nav extends Component {
           <ul className="nav-list-container" id="mobile-disp-hide">{listItems}
           </ul>
           <a href="">
-            <img alt='Go back to home page' className='nav-logo' src={Logo}></img>
+            <img title='Go back to home page' className='nav-logo' src={Logo}></img>
           </a>
           <span className="mobile-nav-menu-icon">
             <a>
