@@ -26,7 +26,7 @@ class Landing extends Component {
       'Welcome to my portfolio.',
       'Start exploring!'
     ];
-    var time = 4000;
+    var time = 3500;
 
     changeText(element, texts, time);
 
