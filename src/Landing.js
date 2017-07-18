@@ -22,9 +22,8 @@ class Landing extends Component {
     var element = document.getElementById("change");
     var texts = [
       'Hello!',
-      'My name is Nicolas.',
       'Welcome to my portfolio.',
-      'Start exploring!'
+      'Nicolas Roybal<br>Web developer'
     ];
     var time = 3500;
 
