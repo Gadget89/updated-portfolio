@@ -2,12 +2,6 @@ import React, { Component } from 'react';
 import './main.css';
 import Logo from './assets/new-logo.png';
 
-// componentWillUpdate() {
-//     this.updateNav();
-// }
-
-// updateNav() {
-
 // Array of navigation buttons data
 const navButtons = [
   {
@@ -38,7 +32,8 @@ const navButtons = [
 
 // Map through array and return a <li>
 const listItems = navButtons.map((button) =>
-  <li key={button.id}>
+  <li
+    key={button.id}>
     <a
       title={button.title}
       href={button.link}>
@@ -71,13 +66,15 @@ class Nav extends Component {
     return (
       <section>
         <header>
-          <nav className="nav-container">
+          <nav
+            className="nav-container">
             <ul
               className="nav-list-container"
               id="mobile-disp-hide">
               {listItems}
             </ul>
-            <a href="">
+            <a
+              href="">
               <img
                 alt=""
                 title='Go back to home page'
@@ -85,7 +82,8 @@ class Nav extends Component {
                 src={Logo}>
               </img>
             </a>
-            <span className="mobile-nav-menu-icon">
+            <span
+              className="mobile-nav-menu-icon">
                 <div>
                   <i
                     id="open"
@@ -101,9 +99,15 @@ class Nav extends Component {
                   </i>
                 </div>
             </span>
-            <div className='nav-background'></div>
+            <div
+              className='nav-background'>
+            </div>
           </nav>
-          <div className="nav-modal" id="modal">{listItems}</div>
+          <ul
+            className="nav-modal"
+            id="modal">
+            {listItems}
+          </ul>
         </header>
       </section>
     );

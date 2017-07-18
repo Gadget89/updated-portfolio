@@ -19,9 +19,9 @@ li {
 }
 #canvasoverlay {
   position: relative;
-    top: -812px;
-    left: 0;
-    float: left;
+  top: -812px;
+  left: 0;
+  float: left;
 }
 .hidden {
   display: none;
@@ -88,19 +88,42 @@ li {
   z-index: 11;
 }
 /*Mobile Nav*/
+.close-mobile-nav {
+  margin: 0;
+}
 .mobile-nav-menu-icon {
   display: none;
   z-index: 11;
 }
+.mobile-nav-menu-icon i:hover{
+  color: #FFC107;
+  cursor: pointer;
+}
 .open-mobile-nav {
-  padding: 200px;
+  padding: 200px 0px;
   position: absolute;
   background: white;
   z-index: 10;
   width: 100%;
   margin-top: 70px;
   opacity: 1;
+  text-align: center;
   transition: 0.45s;
+}
+.open-mobile-nav a {
+  color: black;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.open-mobile-nav li {
+  border-bottom: solid 2px #FFC107;
+  list-style: none;
+  display: block;
+  margin-bottom: 5%;
+  margin: 2% auto;
+  padding: 15px 0;
+  width: 108px;
+  text-transform: uppercase;
 }
 .close {
   display: none;
@@ -155,5 +178,8 @@ li {
     float: right;
     margin: 18px 5%;
     position: relative;
+  }
+  .open-mobile-nav {
+    height: 51%;
   }
 }
