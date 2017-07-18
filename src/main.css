@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  min-height: 1500px;
+  /*min-height: 1500px;*/
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -131,9 +131,9 @@ li {
 .open {
   display: block;
 }
-/*.nav-modal {
-  opacity: 1;
-}*/
+.nav-modal {
+  margin: 0;
+}
 
 /*Landing Styles*/
 .landing-hero-img {
