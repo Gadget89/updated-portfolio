@@ -95,7 +95,8 @@ li {
   z-index: 10;
   width: 100%;
   margin-top: 70px;
-  transition: 5s;
+  opacity: 1;
+  transition: 0.25s;
 }
 .close {
   display: none;
@@ -103,6 +104,9 @@ li {
 .open {
   display: block;
 }
+/*.nav-modal {
+  opacity: 1;
+}*/
 
 /*Landing Styles*/
 .landing-hero-img {

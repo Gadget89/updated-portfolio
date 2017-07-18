@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import './main.css';
 import Logo from './assets/new-logo.png';
 
+// componentWillUpdate() {
+//     this.updateNav();
+// }
+
+// updateNav() {
+
 // Array of navigation buttons data
 const navButtons = [
   {
@@ -43,19 +49,21 @@ const listItems = navButtons.map((button) =>
 
 function  openNav() {
   document.getElementById('modal').className = "open-mobile-nav"
-  document.getElementById('open').className = "hidden"
+  document.getElementById('open').style.visibility = "hidden"
+  document.getElementById('exit').style.visibility = "visible"
+  // document.getElementById('open').className = "close"
+  // document.getElementById('exit').className = "open"
   document.getElementById('exit').style.display = "block"
 }
 
 function closeNav() {
   document.getElementById('modal').className = "close-mobile-nav"
-  document.getElementById('open').remove.className("hidden")
-  document.getElementById('exit').className = "hidden"
+  document.getElementById('exit').style.visibility = "hidden"
+  document.getElementById('open').style.visibility = "visible"
+  // document.getElementById('exit').className = "close"
   // document.getElementById('open').className = "open"
-  // document.getElementById('open').style.display = "block"
-
+  document.getElementById('open').style.display = "block"
 }
-
 
 class Nav extends Component {
 
@@ -95,7 +103,7 @@ class Nav extends Component {
             </span>
             <div className='nav-background'></div>
           </nav>
-          <div id="modal">{listItems}</div>
+          <div className="nav-modal" id="modal">{listItems}</div>
         </header>
       </section>
     );
