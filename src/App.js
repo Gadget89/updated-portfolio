@@ -13,7 +13,6 @@ class App extends Component {
         <Landing/>
         <CanvasComponent/>
       </div>
-
     );
   }
 }

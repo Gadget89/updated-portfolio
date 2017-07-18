@@ -41,27 +41,66 @@ const listItems = navButtons.map((button) =>
   </li>
 )
 
+function  openNav() {
+  document.getElementById('modal').className = "open-mobile-nav"
+  document.getElementById('open').className = "hidden"
+  document.getElementById('exit').style.display = "block"
+}
+
+function closeNav() {
+  document.getElementById('modal').className = "close-mobile-nav"
+  document.getElementById('open').remove.className("hidden")
+  document.getElementById('exit').className = "hidden"
+  // document.getElementById('open').className = "open"
+  // document.getElementById('open').style.display = "block"
+
+}
+
+
 class Nav extends Component {
 
   render() {
     return (
-      <header>
-        <nav className="nav-container">
-          <ul className="nav-list-container" id="mobile-disp-hide">{listItems}
-          </ul>
-          <a href="">
-            <img title='Go back to home page' className='nav-logo' src={Logo}></img>
-          </a>
-          <span className="mobile-nav-menu-icon">
-            <a>
-              <i className="fa fa-bars fa-2x" aria-hidden="true"></i>
+      <section>
+        <header>
+          <nav className="nav-container">
+            <ul
+              className="nav-list-container"
+              id="mobile-disp-hide">
+              {listItems}
+            </ul>
+            <a href="">
+              <img
+                alt=""
+                title='Go back to home page'
+                className='nav-logo'
+                src={Logo}>
+              </img>
             </a>
-          </span>
-          <div className='nav-background'></div>
-        </nav>
-      </header>
+            <span className="mobile-nav-menu-icon">
+                <div>
+                  <i
+                    id="open"
+                    className="open fa fa-bars fa-2x"
+                    onClick={openNav}
+                    aria-hidden="true">
+                  </i>
+                  <i
+                    id="exit"
+                    className="close fa fa-times fa-2x"
+                    onClick={closeNav}
+                    aria-hidden="true">
+                  </i>
+                </div>
+            </span>
+            <div className='nav-background'></div>
+          </nav>
+          <div id="modal">{listItems}</div>
+        </header>
+      </section>
     );
   }
 }
+
 
 export default Nav;

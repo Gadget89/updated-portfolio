@@ -23,6 +23,9 @@ li {
     left: 0;
     float: left;
 }
+.hidden {
+  display: none;
+}
 /*Navigation Styles*/
 .nav-background {
   background-color: #FFF;
@@ -85,6 +88,22 @@ li {
   display: none;
   z-index: 11;
 }
+.open-mobile-nav {
+  padding: 200px;
+  position: absolute;
+  background: white;
+  z-index: 10;
+  width: 100%;
+  margin-top: 70px;
+  transition: 5s;
+}
+.close {
+  display: none;
+}
+.open {
+  display: block;
+}
+
 /*Landing Styles*/
 .landing-hero-img {
 
