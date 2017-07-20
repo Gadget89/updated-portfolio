@@ -161,7 +161,11 @@ li {
   top: 33%;
   z-index: 9;
 }
-
+@media only screen and (max-width: 1440px) {
+  #canvasoverlay {
+    top: -904px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   /*For mobile device screens*/
   html {
