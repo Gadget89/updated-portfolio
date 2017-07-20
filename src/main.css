@@ -11,7 +11,7 @@ body, html {
   padding: 0;
   font-family: sans-serif;
   /*min-height: auto;*/
-  height: auto;
+  height: 3000px;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -170,14 +170,43 @@ li {
   top: 33%;
   z-index: 9;
 }
+/*About Me Section*/
+.about-container {
+  position: inherit;
+  width: 100%;
+}
+.about-content {
+  font-size: 1.5em;
+  line-height: 2em;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  text-indent: 50px;
+  width: 50%;
+}
+.about-content-title {
+  border-bottom: solid 2px #FFC107;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  width: 50%;
+}
+.about-img-container {
+  width: 100%;
+}
+.about-img-container img {
+  display: block;
+  margin: 10px auto;
+  width: 500px;
+}
 /*Footer*/
 .footer-container {
-  position: absolute;
+  position: relative;
   width: 100%;
 }
 .footer-info {
+  font-size: 1.5em;
   text-align: center;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 .footer-link-container {
   margin: 0 auto;
@@ -235,7 +264,19 @@ li {
 }
 @media only screen and (max-width: 420px) {
   /*Small mobile devices*/
-  /*#canvasoverlay {
-    display: none;
-  }*/
+  .about-content {
+    font-size: 1em;
+    line-height: 2em;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    text-indent: 25px;
+    width: 90%;
+  }
+  .about-content-title {
+    margin-bottom: 10px;
+    width: 90%;
+  }
+  .footer-info {
+    font-size: 1em;
+  }
 }

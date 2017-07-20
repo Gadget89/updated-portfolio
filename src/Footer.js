@@ -46,7 +46,7 @@ class Footer extends Component {
     return (
       <footer className="footer-container">
         <p className="footer-info">
-          links
+          Links
         </p>
         <ul className="footer-link-container">
           {listItems}
