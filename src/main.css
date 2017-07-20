@@ -39,6 +39,7 @@ li {
 /*Shared Navigation Styles*/
 .nav-background {
   background-color: #FFF;
+  box-shadow: 0 4px 6px -6px black;
   width: 100%;
   height: 70px;
   /*opacity: 0.95;*/
