@@ -45,9 +45,19 @@ class Footer extends Component {
   render() {
     return (
       <footer className="footer-container">
+        <p className="footer-info">
+          links
+        </p>
         <ul className="footer-link-container">
           {listItems}
         </ul>
+        <p className="footer-info">
+          2017 All Rights Reserved.
+        </p>
+        <p className="footer-info">
+          Made with <i className="fa fa-heart" aria-hidden="true"></i> in San Antonio, TX.
+        </p>
+
       </footer>
     );
   }
