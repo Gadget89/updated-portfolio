@@ -4,6 +4,7 @@ import './main.css';
 import Nav from './Nav.js'
 import Landing from './Landing'
 import CanvasComponent from './Canvas'
+import Footer from './Footer'
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <Nav/>
         <Landing/>
         <CanvasComponent/>
+        <Footer/>
       </div>
     );
   }
