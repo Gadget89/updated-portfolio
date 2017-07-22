@@ -11,7 +11,7 @@ const footerItem = [
   {
     id: "linkedin",
     link: "https://www.linkedin.com/in/nicolas-roybal-54bb1413a",
-    icon: "fa fa-linkedin fa-3x",
+    icon: "fa fa-linkedin-square fa-3x",
     title: "Check out my LinkedIn."
   },
   {

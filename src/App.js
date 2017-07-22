@@ -5,6 +5,7 @@ import Nav from './Nav.js'
 import Landing from './Landing'
 import CanvasComponent from './Canvas'
 import About from './About'
+import Projects from './Projects'
 import Footer from './Footer'
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
         <Landing/>
         <CanvasComponent/>
         <About/>
+        <Projects/>
         <Footer/>
       </div>
     );

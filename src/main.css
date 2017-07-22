@@ -5,13 +5,13 @@ Blue: 3F51B5
 Light-grey:
 Yellow: FFC107
 */
-body, html {
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   /*min-height: auto;*/
-  height: 3000px;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -172,7 +172,7 @@ li {
 }
 /*About Me Section*/
 .about-container {
-  position: inherit;
+  position: absolute;
   width: 100%;
 }
 .about-content {
@@ -275,6 +275,9 @@ li {
   .about-content-title {
     margin-bottom: 10px;
     width: 90%;
+  }
+  .about-img-container img {
+    width: 400px;
   }
   .footer-info {
     font-size: 1em;
