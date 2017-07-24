@@ -36,7 +36,8 @@ const listItems = navButtons.map((button) =>
     key={button.id}>
     <a
       title={button.title}
-      href={button.link}>
+      href={button.link}
+      onClick={closeNav}>
       {button.name}
     </a>
   </li>
@@ -44,17 +45,18 @@ const listItems = navButtons.map((button) =>
 
 function  openNav() {
   document.getElementById('modal').className = "open-mobile-nav"
-  document.getElementById('open').style.visibility = "hidden"
-  document.getElementById('exit').style.visibility = "visible"
+  document.getElementById('open').style.display = "none"
+  document.getElementById('exit').style.display = "block"
   // document.getElementById('open').className = "close"
   // document.getElementById('exit').className = "open"
   document.getElementById('exit').style.display = "block"
+  window.scrollTo(0, 0)
 }
 
 function closeNav() {
   document.getElementById('modal').className = "close-mobile-nav"
-  document.getElementById('exit').style.visibility = "hidden"
-  document.getElementById('open').style.visibility = "visible"
+  document.getElementById('exit').style.display = "none"
+  document.getElementById('open').style.display = "block"
   // document.getElementById('exit').className = "close"
   // document.getElementById('open').className = "open"
   document.getElementById('open').style.display = "block"

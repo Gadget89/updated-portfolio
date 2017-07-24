@@ -6,6 +6,7 @@ Light-grey:
 Yellow: FFC107
 */
 /*Global Styles*/
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -13,6 +14,7 @@ body {
   font-family: sans-serif;
   /*min-height: auto;*/
   height: 100%;
+  width: 100%;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -52,7 +54,6 @@ li {
   box-shadow: 0 4px 6px -6px black;
   width: 100%;
   height: 70px;
-  /*opacity: 0.95;*/
   position: fixed;
   top: 0;
   z-index: 10;
@@ -304,7 +305,7 @@ li {
   }
 
   .open-mobile-nav {
-    height: 51%;
+    height: 100%;
   }
 }
 @media only screen and (max-width: 420px) {
@@ -330,5 +331,8 @@ li {
   }
   .footer-info {
     font-size: 1em;
+  }
+  .landing-hero-img {
+
   }
 }
