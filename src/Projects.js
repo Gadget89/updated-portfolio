@@ -3,28 +3,28 @@ import './main.css';
 
 const slides = [
   {
+    id: "sudoku",
+    photo: "/static/media/laptop-sudoku.7385c2c8.png",
+    link: "https://sudoku-puzzle-sa.herokuapp.com/#/",
+    git: "",
+    title: "Sudoku Solver",
+    text: "This app uses brute force to solve sudoku puzzles and can identify if a puzzle cannot be solved."
+  },
+  {
     id: "gist",
     photo: "/static/media/laptop-gist.bdd93949.png",
     link: "https://the-gist-app.herokuapp.com/#/",
     git: "",
     title: "The Gist App",
-    text: "Description of app"
+    text: "An app created for developer's tool belts to create and store notes."
   },
   {
     id: "blog",
     photo: "/static/media/laptop-blog.3b693321.png",
     link: "https://client-week-project.herokuapp.com/",
     git: "",
-    title: "All Things Spurs Blog",
-    text: "Description of app"
-  },
-  {
-    id: "sudoku",
-    photo: "/static/media/laptop-sudoku.7385c2c8.png",
-    link: "https://sudoku-puzzle-sa.herokuapp.com/#/",
-    git: "",
-    title: "Sudoku Solver",
-    text: "Description of app"
+    title: "Spurs Blog",
+    text: "First group project develpoing a blog dedicated to San Antonio's basketball team."
   }
 ]
 
@@ -33,15 +33,21 @@ const slideItems = slides.map((slide) =>
   <article
     className="slide-container"
     key={slide.id}>
-    <img
-      alt={slide.title}
-      className="slide-image"
-      src={slide.photo}>
-    </img>
+    <a
+      href={slide.link}
+      rel="noopener noreferrer"
+      target="_blank"
+      title={"Check out " + slide.title + " website."}>
+      <img
+        alt={slide.title}
+        className="slide-image"
+        src={slide.photo}>
+      </img>
+    </a>
     <aside
       className="slide-info">
       <h2
-        className="slide-content">
+        className="slide-content, component-content-title">
         {slide.title}
       </h2>
       <p
@@ -81,7 +87,8 @@ class Projects extends Component {
   render() {
     return (
       <section
-        className="slides-container">
+        className="slides-container"
+        id="projects">
         <h2 className="component-content-title">PROJECTS</h2>
         {slideItems}
       </section>

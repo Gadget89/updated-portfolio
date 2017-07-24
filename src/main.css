@@ -214,13 +214,16 @@ li {
   transition: all .2s ease-in-out;
 }
 .slide-container:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transform: perspective();
 }
 .slides-container {
   margin: 5% auto;
   position: relative;
   width: 100%;
+}
+.slide-content {
+  font-size: 1.5em;
 }
 .slide-image {
   display: block;
@@ -320,6 +323,10 @@ li {
   }
   .about-img-container img {
     width: 400px;
+  }
+  .slide-container {
+    width: 100%;
+    display: block;
   }
   .footer-info {
     font-size: 1em;

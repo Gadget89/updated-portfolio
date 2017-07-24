@@ -6,13 +6,13 @@ import Logo from './assets/new-logo.png';
 const navButtons = [
   {
     id: "about",
-    link: "",
+    link: "#about",
     name: "my story",
     title: "Check out my story."
   },
   {
     id: "projects",
-    link: "",
+    link: "#projects",
     name: "projects",
     title: "Check out my projects"
   },
