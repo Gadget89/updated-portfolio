@@ -33,7 +33,7 @@ class CanvasComponent extends Component {
           if (canvas.getContext){
               var ctx = canvas.getContext('2d');
 
-              ctx.fillStyle = "rgba(255, 255, 255, 0.5)";
+              // ctx.fillStyle = "rgba(255, 255, 255, 0.5)";
               ctx.strokeStyle = "black";
               ctx.lineWidth = 1;
 
