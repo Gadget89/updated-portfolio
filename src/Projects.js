@@ -4,11 +4,12 @@ import Blog from './assets/laptop-blog.png'
 import Sudoku from './assets/laptop-sudoku.png'
 import Gist from './assets/laptop-gist.png'
 
+console.log(Blog, Sudoku, Gist);
 
 const slides = [
   {
     id: "gist",
-    photo: {Gist},
+    photo: "/static/media/laptop-gist.bdd93949.png",
     link: "https://the-gist-app.herokuapp.com/#/",
     git: "",
     title: "The Gist App",
@@ -16,7 +17,7 @@ const slides = [
   },
   {
     id: "blog",
-    photo: {Blog},
+    photo: "/static/media/laptop-blog.3b693321.png",
     link: "https://client-week-project.herokuapp.com/",
     git: "",
     title: "All Things Spurs Blog",
@@ -24,13 +25,14 @@ const slides = [
   },
   {
     id: "sudoku",
-    photo: {Sudoku},
+    photo: "/static/media/laptop-sudoku.7385c2c8.png",
     link: "https://sudoku-puzzle-sa.herokuapp.com/#/",
     git: "",
     title: "Sudoku Solver",
     text: "Description of app"
   }
 ]
+console.log(slides[1].photo);
 
 const slideItems = slides.map((slide) =>
   <article
@@ -75,7 +77,7 @@ const slideItems = slides.map((slide) =>
     </aside>
   </article>
 )
-console.log(slides);
+// console.log(slides.photo);
 
 class Projects extends Component {
 
