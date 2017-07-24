@@ -5,6 +5,7 @@ Blue: 3F51B5
 Light-grey:
 Yellow: FFC107
 */
+/*Global Styles*/
 body {
   box-sizing: border-box;
   margin: 0;
@@ -34,6 +35,9 @@ li {
 
 .hidden {
   display: none;
+}
+.page-content-container {
+  position: absolute;
 }
 
 /*Shared Navigation Styles*/
@@ -172,7 +176,7 @@ li {
 }
 /*About Me Section*/
 .about-container {
-  position: absolute;
+  position: relative;
   width: 100%;
 }
 .about-content {
@@ -198,10 +202,25 @@ li {
   margin: 10px auto;
   width: 500px;
 }
+/*Projects*/
+.slide-container {
+  margin: 2% 5%;
+}
+.slides-container {
+  position: relative;
+}
+.slide-image {
+  width: 50%;
+}
+.slide-info {
+  display: block;
+  float: right;
+  margin: 0 5%;
+  width: 40%;
+}
 /*Footer*/
 .footer-container {
-  position: absolute;
-  margin-top: 100%;
+  position: relative;
   height: 30%;
   width: 100%;
 }
@@ -221,6 +240,7 @@ li {
   margin: 10px;
   text-decoration: none;
 }
+
 @media only screen and (min-width: 1440px) {
   /*HD Desktop*/
   #canvasoverlay {

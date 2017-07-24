@@ -11,14 +11,16 @@ import Footer from './Footer'
 class App extends Component {
   render() {
     return (
-      <div>
+      <main>
         <Nav/>
         <Landing/>
         <CanvasComponent/>
-        <About/>
-        <Projects/>
-        <Footer/>
-      </div>
+        <section className="page-content-container">
+          <About/>
+          <Projects/>
+          <Footer/>
+        </section>
+      </main>
     );
   }
 }

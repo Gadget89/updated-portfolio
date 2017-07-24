@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
 import './main.css';
-import Blog from './assets/laptop-blog.png'
-import Sudoku from './assets/laptop-sudoku.png'
-import Gist from './assets/laptop-gist.png'
-
-console.log(Blog, Sudoku, Gist);
 
 const slides = [
   {
@@ -32,7 +27,7 @@ const slides = [
     text: "Description of app"
   }
 ]
-console.log(slides[1].photo);
+
 
 const slideItems = slides.map((slide) =>
   <article
@@ -85,7 +80,8 @@ class Projects extends Component {
 
   render() {
     return (
-      <section>
+      <section
+        className="slides-container">
         {slideItems}
       </section>
     );
