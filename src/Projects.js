@@ -82,6 +82,7 @@ class Projects extends Component {
     return (
       <section
         className="slides-container">
+        <h2 className="component-content-title">PROJECTS</h2>
         {slideItems}
       </section>
     );

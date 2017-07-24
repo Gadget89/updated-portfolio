@@ -7,7 +7,7 @@ class About extends Component {
   render() {
     return (
       <article className="about-container">
-        <h2 className="about-content-title">MY STORY</h2>
+        <h2 className="component-content-title">MY STORY</h2>
         <p className="about-content">
           I began my journey to become a software developer in the Fall of 2016. I've had the great privilege to learn from accomplished instructors at The Iron Yard and I graduated from their Front-End Engineering program in February 2017.
         </p>
