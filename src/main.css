@@ -166,13 +166,14 @@ li {
   margin-top: -92px;
 }
 
-.landing-message {
+.landing-message p{
   color: white;
   display: block;
   font-size: 4.5em;
   font-weight: 600;
   left: 25%;
   min-width: 50%;
+  margin: 0;
   right: 25%;
   position: absolute;
   text-align: center;

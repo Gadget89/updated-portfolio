@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import './main.css';
+import Sudoku from './assets/laptop-sudoku.png'
+import Blog from './assets/laptop-blog.png'
+import Gist from './assets/laptop-gist.png'
 
 const slides = [
   {
     id: "sudoku",
-    photo: "/static/media/laptop-sudoku.7385c2c8.png",
+    photo: {Sudoku},
     link: "https://sudoku-puzzle-sa.herokuapp.com/#/",
     git: "",
     title: "Sudoku Solver",
@@ -12,7 +15,7 @@ const slides = [
   },
   {
     id: "gist",
-    photo: "/static/media/laptop-gist.bdd93949.png",
+    photo: {Gist},
     link: "https://the-gist-app.herokuapp.com/#/",
     git: "",
     title: "The Gist App",
@@ -20,7 +23,7 @@ const slides = [
   },
   {
     id: "blog",
-    photo: "/static/media/laptop-blog.3b693321.png",
+    photo: {Blog},
     link: "https://client-week-project.herokuapp.com/",
     git: "",
     title: "Spurs Blog",
@@ -28,8 +31,7 @@ const slides = [
   }
 ]
 
-
-const slideItems = slides.map((slide) =>
+const slideItems = slides.map((slide, images) =>
   <article
     className="slide-container"
     key={slide.id}>
@@ -41,7 +43,7 @@ const slideItems = slides.map((slide) =>
       <img
         alt={slide.title}
         className="slide-image"
-        src={slide.photo}>
+        src={slide.photo.Sudoku||slide.photo.Gist||slide.photo.Blog}>
       </img>
     </a>
     <aside
@@ -78,11 +80,8 @@ const slideItems = slides.map((slide) =>
     </aside>
   </article>
 )
-// console.log(slides.photo);
 
 class Projects extends Component {
-
-  // Map through array and display one slide every 10 seconds
 
   render() {
     return (
