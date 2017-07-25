@@ -282,7 +282,7 @@ li {
     /*top: -810px;*/
   }
 
-  .landing-message {
+  .landing-message p {
     font-size: 3em;
     left: 0;
     min-width: 100%;
