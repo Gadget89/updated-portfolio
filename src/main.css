@@ -45,6 +45,7 @@ li {
   display: none;
 }
 .page-content-container {
+  padding-top: 2%;
   position: absolute;
 }
 
@@ -215,6 +216,28 @@ li {
 .about-container {
   position: relative;
   width: 100%;
+  z-index: 3;
+}
+.about-container-back {
+  -webkit-box-shadow: -1px 1px 24px 0 rgba(0,0,0,0.3);
+  box-shadow: -1px 1px 24px 0 rgba(0,0,0,0.3);
+  height: 50%;
+  margin: 0 5%;
+  position: absolute;
+  -webkit-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
+  width: 90%;
+  z-index: -1;
+}
+.about-container-front {
+  background-color: white;
+  box-shadow: -1px 1px 24px 0 rgba(0,0,0,0.3);
+  height: 50%;
+  margin: 0 5%;
+  position: absolute;
+  width: 90%;
+  z-index: 1;
 }
 .about-content {
   font-size: 1.5em;
@@ -222,7 +245,7 @@ li {
   margin: 0 auto;
   padding-bottom: 10px;
   text-indent: 50px;
-  width: 50%;
+  width: 80%;
 }
 
 .about-img-container {
