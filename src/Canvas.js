@@ -21,7 +21,7 @@ class CanvasComponent extends Component {
               hexRectangleHeight,
               hexRectangleWidth,
               hexagonAngle = 0.523598776, // 30 degrees in radians
-              sideLength = 125,
+              sideLength = 40,
               boardWidth = 100,
               boardHeight = 100;
 

@@ -177,15 +177,15 @@ li {
 /*Landing Styles*/
 .landing-hero-img {
   margin-top: -92px;
-  filter: grayscale(100%);
+  /*filter: grayscale(100%);
   -webkit-filter: grayscale(0%);
   -webkit-animation: colorSplash 15s;
   animation: colorSplash 15s;
   -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+  animation-iteration-count: 1;*/
 }
 
-@-webkit-keyframes colorSplash{
+/*@-webkit-keyframes colorSplash{
     from {filter: grayscale(100%)}
     to {filter: grayscale(0%);}
 }
@@ -193,7 +193,7 @@ li {
 @keyframes colorSplash {
     from {filter: grayscale(100%)}
     to {filter: grayscale(0%)}
-}
+}*/
 
 .landing-message p{
   color: white;
