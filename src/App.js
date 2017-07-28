@@ -6,6 +6,7 @@ import Landing from './Landing'
 import CanvasComponent from './Canvas'
 import About from './About'
 import Projects from './Projects'
+import Skills from './Skills'
 import Footer from './Footer'
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
         <section className="page-content-container">
           <About/>
           <Projects/>
+          <Skills/>
           <Footer/>
         </section>
       </main>
