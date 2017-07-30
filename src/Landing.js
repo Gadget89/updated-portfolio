@@ -23,7 +23,7 @@ class Landing extends Component {
     var texts = [
       'Hello!',
       'Welcome to my portfolio.',
-      'Nicolas Roybal<br>Web developer'
+      'Nicolas Roybal<br>Web designer<br>and<br>developer'
     ];
     var time = 3500;
 

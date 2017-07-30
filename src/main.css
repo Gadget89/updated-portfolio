@@ -178,8 +178,8 @@ li {
 /*Landing Styles*/
 .landing-hero-img {
   margin-top: -92px;
-  /*filter: grayscale(100%);
-  -webkit-filter: grayscale(0%);
+  /*filter: grayscale(100%);*/
+  /*-webkit-filter: grayscale(0%);
   -webkit-animation: colorSplash 15s;
   animation: colorSplash 15s;
   -webkit-animation-iteration-count: 1;
@@ -199,16 +199,16 @@ li {
 .landing-message p{
   color: white;
   display: block;
-  font-size: 4.5em;
+  font-size: 4em;
   font-weight: 600;
   left: 25%;
-  min-width: 50%;
+  min-width: 51%;
   margin: 0;
   right: 25%;
   position: absolute;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  text-shadow: 2px 4px 3px black;
   top: 33%;
   z-index: 9;
 }
