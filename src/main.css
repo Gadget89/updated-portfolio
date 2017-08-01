@@ -36,7 +36,7 @@ li {
 }
 .component-content-title {
   border-bottom: solid 2px #FFC107;
-  margin: 5% auto;
+  margin: 3.5% auto;
   padding: 20px 0;
   text-align: center;
   width: 50%;
@@ -45,8 +45,11 @@ li {
   display: none;
 }
 .page-content-container {
-  padding-top: 2%;
+  /*padding-top: 2%;*/
   position: absolute;
+}
+.page-content-container section {
+  padding-top: 2%;
 }
 
 /*Shared Navigation Styles*/
