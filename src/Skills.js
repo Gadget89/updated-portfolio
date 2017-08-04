@@ -7,7 +7,17 @@ class Skills extends Component {
     return (
       <section>
         <ul>
-          <li></li>
+          <h2>
+            Technologies I use
+          </h2>
+          <li>
+            <h2>
+              Front End
+            </h2>
+          </li>
+          <li>
+            
+          </li>
         </ul>
       </section>
     );
