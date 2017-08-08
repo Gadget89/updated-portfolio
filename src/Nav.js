@@ -2,24 +2,32 @@ import React, { Component } from 'react';
 import './main.css';
 import Logo from './assets/new-logo.png';
 
+// const trigger = (event) => {
+//   event.preventDefault();
+//   console.log("yo");
+// }
+
+
+
 // Array of navigation buttons data
 const navButtons = [
+
   {
     id: "about",
-    link: "#about",
     name: "my story",
+    link: "#about",
     title: "Check out my story."
   },
   {
     id: "projects",
-    link: "#projects",
     name: "projects",
+    link: "#projects",
     title: "Check out my projects"
   },
   {
     id: "contact",
-    link: "",
     name: "contact me",
+    link: "#contact",
     title: "Let's get in touch"
   },
   {
@@ -30,6 +38,7 @@ const navButtons = [
   }
 ]
 
+
 // Map through array and return a <li>
 const listItems = navButtons.map((button) =>
   <li
@@ -37,7 +46,7 @@ const listItems = navButtons.map((button) =>
     <a
       title={button.title}
       href={button.link}
-      onClick={closeNav}>
+      onClick={button.onCLick}>
       {button.name}
     </a>
   </li>
@@ -61,6 +70,12 @@ function closeNav() {
   // document.getElementById('open').className = "open"
   document.getElementById('open').style.display = "block"
 }
+// var trigger = () => {
+//   console.log(window.innerWidth);
+//   if(window.innerWidth > 1024){
+//     window.scroll(0, 1000)
+//   }
+// }
 
 class Nav extends Component {
 

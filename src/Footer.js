@@ -15,16 +15,16 @@ const footerItem = [
     title: "Check out my LinkedIn."
   },
   {
-    id: "medium",
-    link: "https://medium.com/@nicolas.roybal/",
-    icon: "fa fa-medium fa-3x",
-    title: "Check out my blog on Medium."
-  },
-  {
     id: "codepen",
     link: "http://codepen.io/nickr999/",
     icon: "fa fa-codepen fa-3x",
     title: "Check out my Codepen."
+  },
+  {
+    id: "email",
+    link: "mailto:hello@nicolasroybal.com",
+    icon: "fa fa-envelope fa-3x",
+    title: "Send me an email."
   }
 ]
 // Map through array and return a <li>

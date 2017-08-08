@@ -8,6 +8,7 @@ import About from './About'
 import Projects from './Projects'
 import Skills from './Skills'
 import Footer from './Footer'
+import Contact from './Contact'
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
           <About/>
           <Projects/>
           <Skills/>
+          <Contact/>
           <Footer/>
         </section>
       </main>
