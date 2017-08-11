@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
+import Headroom from 'react-headroom'
 import './main.css';
 import Logo from './assets/new-logo.png';
-
-// const trigger = (event) => {
-//   event.preventDefault();
-//   console.log("yo");
-// }
-
 
 
 // Array of navigation buttons data
@@ -77,12 +72,22 @@ function closeNav() {
 //   }
 // }
 
+// componentDidMount() {
+//   // grab an element
+//   var myElement = document.querySelector("header");
+//   // construct an instance of Headroom, passing the element
+//   var headroom  = new Headroom(myElement);
+//   console.log(myElement);
+//   // initialise
+//   headroom.init();
+// }
 class Nav extends Component {
+
 
   render() {
     return (
       <section>
-        <header>
+        <Headroom style={{zIndex: 50}}>
           <nav
             className="nav-container">
             <ul
@@ -125,7 +130,7 @@ class Nav extends Component {
             id="modal">
             {listItems}
           </ul>
-        </header>
+        </Headroom>
       </section>
     );
   }

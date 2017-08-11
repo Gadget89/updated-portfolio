@@ -5,8 +5,10 @@ import './main.css';
 class App extends Component {
   render() {
     return (
-      <section>
-        <p>this is contact content</p>
+      <section id="contact">
+        <h2 name="about" className="component-content-title">CONTACT ME</h2>
+        <p>If you are want to build a </p>
+        <a href="mailto:hello@nicolasroybal.com">hello@nicolasroybal.com</a>
       </section>
     )
   }

@@ -325,7 +325,8 @@ li {
   /*line-height: 500px;*/
   text-align: center;
   font-size: 30px;
-  font-family: 'Roboto Slab', serif;
+  /*font-family: 'Roboto Slab', serif;*/
+  text-transform: uppercase;
 }
 
 @keyframes blinking {
