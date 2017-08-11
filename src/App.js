@@ -13,18 +13,16 @@ import Contact from './Contact'
 class App extends Component {
   render() {
     return (
-      <main>
+      <section className="page-content-container">
         <Nav/>
         <Landing/>
         <CanvasComponent/>
-        <section className="page-content-container">
-          <About/>
-          <Projects/>
-          <Skills/>
-          <Contact/>
-          <Footer/>
-        </section>
-      </main>
+        <About/>
+        <Skills/>
+        <Projects/>
+        <Contact/>
+        <Footer/>
+      </section>
     );
   }
 }

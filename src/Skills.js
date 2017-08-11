@@ -4,29 +4,31 @@ import './main.css';
 const skills = [
   {
     id:"ideas",
-    icon: "fa fa-lightbulb-o",
+    icon: "fa fa-lightbulb-o fa-3x",
     title: "Ideas",
     content: "I collaborate with clients begining with a blank canvas to allow the content guide the design."
   },
   {
     id:"design",
-    icon: "fa fa-laptop",
+    icon: "fa fa-laptop fa-3x",
     title: "Design",
     content: "I am a creative problem solver and truly enjoy exploring ideas to create beautiful products."
   },
   {
     id:"develop",
-    icon: "fa fa-code",
+    icon: "fa fa-code fa-3x",
     title: "Develop",
     content: "I have an unwavering dedication to my craft and leverage my skills on every project."
   }
 ]
 // Map through array and return a <li>
 const skillItems = skills.map((skill) =>
-  <article key={skill.id}>
+  <article
+    className="slide-container"
+    key={skill.id}>
     <i className={skill.icon}></i>
     <h2>{skill.title}</h2>
-    <p>{skill.content}</p>
+    <p className="center-item">{skill.content}</p>
   </article>
 )
 
@@ -112,16 +114,16 @@ class Skills extends Component {
 
   render() {
     return (
-      <div>
-        <h2>Skills</h2>
-        <section>
+      <section className="slides-container" id="skills">
+        <h2 className="component-content-title">Skills</h2>
+        <aside className="slide-info slide-content">
           {skillItems}
-        </section>
-        <section>
-          <h2>Technologies I use are:</h2>
+        </aside>
+        <aside>
+          <h2 className="skills-description">Technologies I use:</h2>
           <p className="skills-change-text"></p>
-        </section>
-      </div>
+        </aside>
+      </section>
     );
   }
 }

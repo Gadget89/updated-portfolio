@@ -14,6 +14,12 @@ const navButtons = [
     title: "Check out my story."
   },
   {
+    id: "skills",
+    name: "skills",
+    link: "#skills",
+    title: "Check out my skills."
+  },
+  {
     id: "projects",
     name: "projects",
     link: "#projects",
@@ -65,22 +71,7 @@ function closeNav() {
   // document.getElementById('open').className = "open"
   document.getElementById('open').style.display = "block"
 }
-// var trigger = () => {
-//   console.log(window.innerWidth);
-//   if(window.innerWidth > 1024){
-//     window.scroll(0, 1000)
-//   }
-// }
 
-// componentDidMount() {
-//   // grab an element
-//   var myElement = document.querySelector("header");
-//   // construct an instance of Headroom, passing the element
-//   var headroom  = new Headroom(myElement);
-//   console.log(myElement);
-//   // initialise
-//   headroom.init();
-// }
 class Nav extends Component {
 
 

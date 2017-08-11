@@ -6,7 +6,10 @@ Light-grey:
 Yellow: FFC107
 */
 /*Global Styles*/
-
+/*main {
+  position: absolute;
+  min-width: 100%;
+}*/
 body {
   box-sizing: border-box;
   margin: 0;
@@ -39,6 +42,7 @@ li {
   margin: 3.5% auto;
   padding: 20px 0;
   text-align: center;
+  text-transform: uppercase;
   width: 50%;
 }
 .hidden {
@@ -46,18 +50,19 @@ li {
 }
 .page-content-container {
   /*padding-top: 2%;*/
-  position: absolute;
+  /*position: absolute;*/
+  display: inline;
 }
-.page-content-container section {
+/*.page-content-container section {
   padding-top: 2%;
-}
+}*/
 
 /*Shared Navigation Styles*/
 .nav-background {
   background-color: #FFF;
   box-shadow: 0 4px 6px -6px black;
   width: 100%;
-  height: 70px;
+  height: 90px;
   position: fixed;
   top: 0;
   z-index: 10;
@@ -71,7 +76,7 @@ li {
 }
 .nav-list-container {
   display: flex;
-  margin: 28px auto;
+  margin: 36px auto;
   padding: 0;
   position: relative;
   text-transform: uppercase;
@@ -83,7 +88,8 @@ li {
 }
 
 .nav-list-container li {
-  font-weight: 400;
+  font-size: 1.25em;
+  font-weight: 500;
   margin-left: 30px;
 
 }
@@ -115,7 +121,7 @@ li {
 
 .nav-logo {
   left: 0;
-  margin: 10px 5%;
+  margin: 18px 4%;
   width: 50px;
   position: absolute;
   top: 0;
@@ -179,6 +185,18 @@ li {
 }
 
 /*Landing Styles*/
+.landing-button {
+  color: white;
+  margin-top: 600px;
+  display: inline;
+  z-index: 20;
+  left: 40%;
+  position: absolute;
+  background-color: black;
+  padding: 1.5%;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
 .landing-hero-img {
   margin-top: -92px;
   /*filter: grayscale(100%);*/
@@ -212,7 +230,7 @@ li {
   text-align: center;
   text-transform: uppercase;
   text-shadow: 2px 4px 3px black;
-  top: 33%;
+  top: 20%;
   z-index: 9;
 }
 /*About Me Section*/
@@ -260,10 +278,31 @@ li {
   /*transition: all .2s ease-in-out;*/
   width: 500px;
 }
+.about-wrapper {
+  position: absolute;
+}
 /*.about-img-container img:hover {
   transform: scale(1.1);
   transform: perspective();
 }*/
+/*Skills*/
+.skill-container {
+  width: 33%;
+  display: block;
+  margin: 5%;
+  transition: all .2s ease-in-out;
+  width: 90%;
+}
+.skill-container:hover {
+  transform: scale(1.1);
+  transform: perspective();
+}
+.center-item {
+  width: 90%;
+  margin: 0 5%;
+  text-align: center;
+}
+
 /*Projects*/
 .slide-container {
   width: 33%;
@@ -275,9 +314,14 @@ li {
   transform: perspective();
 }
 .slides-container {
-  margin: 5% auto;
+  display: inline-block;
+  /*margin: 5% auto;*/
+  margin-top: 18%;
   position: relative;
   width: 100%;
+}
+.slides-container:nth-child(even) {
+  margin-top: 0;
 }
 .slide-content {
   font-size: 1.5em;
@@ -297,6 +341,14 @@ li {
   margin: 5%;
   text-align: center;
   width: 90%;
+}
+/*Contact*/
+.contact-message {
+  font-size: 1.5em;
+}
+.contact-link {
+  color: #FFC107;
+  font-size: 2em;
 }
 /*Footer*/
 .footer-container {
@@ -321,10 +373,9 @@ li {
   text-decoration: none;
 }
 .skills-change-text {
-  color: red;
   /*line-height: 500px;*/
   text-align: center;
-  font-size: 30px;
+  font-size: 3em;
   /*font-family: 'Roboto Slab', serif;*/
   text-transform: uppercase;
 }
@@ -336,14 +387,24 @@ li {
   100%  { opacity: 1; }
 }
 .skills-change-text:after {
+  color: #FFC107;
   content: '_';
   animation: blinking 1.2s infinite;
+}
+.skills-description {
+  text-align: center;
 }
 
 @media only screen and (min-width: 1440px) {
   /*HD Desktop*/
   #canvasoverlay {
     top: -904px;
+  }
+  .landing-message p {
+    top: 34%;
+  }
+  .slides-container {
+    margin-top: 10%;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -357,10 +418,10 @@ li {
   }
 
   .landing-message p {
-    font-size: 3em;
+    font-size: 5em;
     left: 0;
     min-width: 100%;
-    top: 25%;
+    top: 4%;
   }
 
   .nav-list-container,
@@ -369,7 +430,7 @@ li {
   }
 
   .nav-background {
-    height: 80px;
+    height: 90px;
   }
 
   .mobile-nav-menu-icon {
@@ -385,6 +446,9 @@ li {
 }
 @media only screen and (max-width: 420px) {
   /*Small mobile devices*/
+  .page-content-container {
+    position: absolute;
+  }
   .about-content {
     font-size: 1em;
     line-height: 2em;
@@ -393,6 +457,11 @@ li {
     text-indent: 25px;
     width: 90%;
   }
+  .about-container-back,
+  .about-container-front {
+    display: none;
+  }
+
   .about-content-title {
     margin-bottom: 10px;
     width: 90%;
