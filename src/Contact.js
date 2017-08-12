@@ -10,7 +10,7 @@ class App extends Component {
           CONTACT ME
         </h2>
         <p className="contact-message">
-          If you need a web develper, please feel free to reach out to me!
+          If you need a web developer, please feel free to reach out to me!
         </p>
         <a
           className="contact-link"

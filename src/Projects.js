@@ -27,7 +27,7 @@ const slides = [
     link: "https://client-week-project.herokuapp.com/",
     git: "",
     title: "Spurs Blog",
-    text: "First group project develpoing a blog dedicated to San Antonio's basketball team."
+    text: "First group project developing a blog dedicated to San Antonio's basketball team."
   }
 ]
 

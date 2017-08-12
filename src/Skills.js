@@ -6,7 +6,7 @@ const skills = [
     id:"ideas",
     icon: "fa fa-lightbulb-o fa-3x",
     title: "Ideas",
-    content: "I collaborate with clients begining with a blank canvas to allow the content guide the design."
+    content: "I collaborate with clients beginning with a blank canvas to allow the content guide the design."
   },
   {
     id:"design",
