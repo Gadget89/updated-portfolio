@@ -14,7 +14,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: helvetica;
   /*min-height: auto;*/
   height: 100%;
   width: 100%;
@@ -407,6 +407,11 @@ li {
     margin-top: 10%;
   }
 }
+@media only screen and (max-width: 10280px) {
+  .landing-button {
+    left: 38%;
+  }
+}
 @media only screen and (max-width: 1024px) {
   /*Mobile device screens*/
   html {
@@ -416,13 +421,24 @@ li {
     display: none;
     /*top: -810px;*/
   }
+  .slides-container {
+    margin-top: 1200px;
+  }
+  .close-mobile-nav {
+    margin: 0;
+    margin-left: -20%;
+  }
+  .landing-button {
+    display: none;
+  }
 
   .landing-message p {
     font-size: 5em;
     left: 0;
     min-width: 100%;
-    top: 4%;
+    top: 30%;
   }
+
 
   .nav-list-container,
   .nav-list-container li {
@@ -441,17 +457,56 @@ li {
   }
 
   .open-mobile-nav {
-    height: 100%;
+    font-size: 2em;
+    height: auto;
+  }
+  .open-mobile-nav li {
+    width: 18%;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .slides-container {
+    margin-top: 1200px;
   }
 }
 @media only screen and (max-width: 420px) {
   /*Small mobile devices*/
+  /*h2 {
+    font-size: 3em;
+  }*/
+  /*p, li {
+    font-size: 2em;
+  }*/
+  .contact-link {
+    font-size: 4em;
+  }
+  .contact-message {
+    font-size: 3em;
+  }
+
+  .footer-container,
+  .footer-info p {
+    font-size: 2em;
+  }
+
+  .slides-container {
+    margin-top: 100%;
+  }
+  .slide-container {
+    margin: 20px 0;
+  }
+  .slide-content {
+    font-size: 3em;
+  }
+  .component-content-title {
+    font-size: 3em;
+  }
   .page-content-container {
     position: absolute;
   }
   .about-content {
-    font-size: 1em;
-    line-height: 2em;
+    font-size: 2.6em;
+    /*line-height: 2em;*/
     margin: 0 auto;
     padding-bottom: 10px;
     text-indent: 25px;
@@ -467,16 +522,24 @@ li {
     width: 90%;
   }
   .about-img-container img {
-    width: 400px;
+    width: 50%;
+  }
+  .landing-message p {
+    top: 4%;
   }
   .slide-container {
     width: 100%;
     display: block;
   }
-  .footer-info {
-    font-size: 1em;
+  .slide-links {
+    font-size: 2em;
   }
-  .landing-hero-img {
-
+  .skills-description {
+    font-size: 3em;
+  }
+}
+@media only screen and (max-width: 412px) {
+  .slides-container {
+    margin-top: 1800px;
   }
 }

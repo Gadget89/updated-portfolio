@@ -47,7 +47,7 @@ const listItems = navButtons.map((button) =>
     <a
       title={button.title}
       href={button.link}
-      onClick={button.onCLick}>
+      onClick={closeNav}>
       {button.name}
     </a>
   </li>
