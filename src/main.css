@@ -38,7 +38,9 @@ li {
   float: left;
 }
 .component-content-title {
-  border-bottom: solid 2px #FFC107;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, purple 22%, red 36%, orange 48%, yellow 63%, green 76%, blue) 1 100%;
+  border-image-slice: 1;
   margin: 3.5% auto;
   padding: 20px 0;
   text-align: center;
@@ -103,7 +105,10 @@ li {
   cursor: pointer;
   font-weight: bold;
   height: 15px;
-  border-bottom: solid 2px #FFC107;
+  /*border-bottom: solid 2px #FFC107;*/
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, purple 22%, red 36%, orange 48%, yellow 63%, green 76%, blue) 1 100%;
+  border-image-slice: 1;
   padding-bottom: 10px;
   animation: moveOut .35s linear;
   -webkit-animation: moveOut .35s linear;
