@@ -204,6 +204,7 @@ li {
 }
 .landing-hero-img {
   margin-top: -92px;
+  width: 100%;
   /*filter: grayscale(100%);*/
   /*-webkit-filter: grayscale(0%);
   -webkit-animation: colorSplash 15s;
