@@ -26,6 +26,3 @@ Visitor will be able to:
 8. Navigate to blog platform.
 9. View portfolio of projects.
 10. Android device color schemes active.
-
-# Milestone 2
-1. Custom in-app blog platform.
