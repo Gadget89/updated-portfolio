@@ -44,8 +44,9 @@ li {
   border-bottom: 2px solid #FFC107;
   /*Following commented out lines are experiment with gradient underlines*/
   /*border-bottom: 2px solid transparent;*/
-  /*border-image: linear-gradient(to right, purple 22%, red 36%, orange 48%, yellow 63%, green 76%, blue) 1 100%;
-  border-image-slice: 1;*/
+  /*border-image: linear-gradient(to right, purple 22%, red 36%, orange 48%, yellow 63%, green 76%, blue) 1 100%;*/
+  /*border-image: linear-gradient(to right, purple 50%, red) 1 100%;*/
+  /*border-image-slice: 1;*/
   margin: 3.5% auto;
   padding: 20px 0;
   text-align: center;
