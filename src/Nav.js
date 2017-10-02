@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Headroom from 'react-headroom'
 import './main.css';
 import Logo from './assets/new-logo.png';
-
+import {TweenMax} from "gsap";
 
 // Array of navigation buttons data
 const navButtons = [
@@ -72,8 +72,10 @@ function closeNav() {
   document.getElementById('open').style.display = "block"
 }
 
-class Nav extends Component {
-
+class Nav extends React.Component {
+  componentDidMount() {
+  TweenMax.fromTo("#box", 5, {y:-100}, {y:100, yoyo:true});
+ }
 
   render() {
     return (
@@ -84,7 +86,7 @@ class Nav extends Component {
             <ul
               className="nav-list-container"
               id="mobile-disp-hide">
-              {listItems}
+              <li id="box">{listItems}</li>
             </ul>
             <a
               href="">
